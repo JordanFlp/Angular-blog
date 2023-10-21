@@ -1,7 +1,7 @@
 <div class="container__big-card">
 <div class="big-card__photo">
   <img
-  src="https://static.wixstatic.com/media/fc7570_ae9913d461894a7ebb7fc420d828ab83~mv2.png/v1/fill/w_560,h_315,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Image-empty-state.png"
+  src="{{photoCover}}"
   alt=""
   height="200px"
   width="400px"
@@ -10,17 +10,16 @@
 
 <div class="big-card__title">
 
-  <a href="#">
+  <a [routerLink]="['content', Id]">
     <h1>
-      New version Angular Avaliable
+      {{ cardTitle }}
     </h1>
   </a>
 </div>
 <div class="big-card__description">
   <p>
-    <a>
-      Lorem Ipsum is simply dummy text of the printing and typesetting
-      industry. Lorem Ipsum has been the industry's standard dummy text
+    <a [routerLink]="['content', Id]">
+      {{cardDescription}}
     </a>
   </p>
 </div>

@@ -3,14 +3,14 @@
 
     <div class="small-card__photo">
       <img
-      src="https://miro.medium.com/v2/resize:fit:1358/1*moJeTvW97yShLB7URRj5Kg.png"
+      src="{{photoCover}}"
       alt=""
       srcset="">
     </div>
 
     <div class="small-card__title">
         <h1>
-          <a href="#">Typescript gonna dies!?</a>
+          <a [routerLink]="['content', Id]">{{cardTitle}}</a>
         </h1>
     </div>
 
